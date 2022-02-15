@@ -1,11 +1,11 @@
 import React from 'react'
 import { Nav, NavLink,NavIcon, Bars } from './NavbarElements'
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
             <Nav>
                 <NavLink to="/">NavLink</NavLink>
-                <NavIcon to="/">
+                <NavIcon to="/" onClick={toggle}>
                     <p>Pizza</p>
                     <Bars />
                 </NavIcon>
